@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+}
+
+.gameboard {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+
+.shuffling {
+  position: absolute;
+  display: flex;
+  width: inherit;
+  height: inherit;
+  background: rgba(5, 5, 5, 0.5);
+}
+
+.shuffling>img {
+  display: flex;
+  margin: auto;
+}
+
+.tile {
+  display: flex;
+  width: 20px;
+  margin: 3px;
+  text-align: center;
+  font-weight: 600;
+  color: gold;
+  -webkit-text-stroke: .5px black;
+  background-color: white;
+
+  transition: font-size 300ms;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.tile.odd {
+  background-color: red;
+}
+
+.tile.empty {
+  background-color: black;
+  color: white;
+}
+
+.tile>span {
+  display: flex;
+  margin: auto;
+}
+
+.game-options {
+  display: flex;
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+}
+
+.game-options select {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+}
+
+.game-options option {
+  height: 30px;
+}
+
+.game-options button {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+}
+
+.game-options .timer {
+  display: inline-flex;
+  width: 100px;
+  height: 30px;
+}
+
+.game-options .timer span {
+  margin: auto;
+}
